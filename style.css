@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent background */
+
+    backdrop-filter: blur(10px);
+    /* Blurring background */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-logo img {
+    height: 17vh;
+}
+
+.site-name {
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px 0 #00bf63;
+}
+
+.navbar-contact {
+    font-size: 17px;
+    font-weight: 700;
+    /* text-shadow: 1px 0  green; */
+    color: black;
+    gap: 5px;
+}
+
+.navbar-contact a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-contact a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    /* color: #00bf63; */
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px #00bf63;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 7vw;
+}
+
+.header h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.header p {
+    margin: -10px;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 32px 16px;
+    justify-content: space-between;
+    gap: 45px;
+    text-align: center;
+    display: flex;
+    margin-top: -36px;
+    padding: 20px;
+}
+
+.container3 {
+    margin-top: -88px;
+    padding: 20px;
+
+    width: 100%;
+}
+
+.container4 {
+    margin-top: 20px;
+    padding: 20px;
+
+    width: 100%;
+}
+
+.headerImage img {
+    width: 30vw;
+    display: flex;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.headerImage img:hover{
+    transform: scale(0.8);
+}
+
+.headerContent h1 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.headerContent h1 span {
+    color: #00bf63;
+}
+
+.headerContent p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.container5 {
+    text-align: center;
+    /* background-color: #f0f0f0; */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+    margin-top: -58px;
+    line-height: 43px;
+}
+
+button {
+    background-color: #0c5b10;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #00bf63;
+    transform: scale(0.9);
+}
+
+.container5 h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container5 p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.whyChoose {
+    gap: 30px;
+    text-align: center;
+}
+.whyChoose h2{
+    line-height: 43px;
+}
+.whyChoose ul li {
+    /* text-align: justify; */
+    justify-content: center;
+    align-items: center;
+    line-height: 23px;
+    margin: 5px;
+    padding: 0 0 3px 1px;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+.svg img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+footer {
+
+    color: black;
+    text-align: center;
+    padding: 14px;
+    margin-bottom: -8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent background */
+    position: sticky;
+    backdrop-filter: blur(10px);
+    /* Blurring background */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #00bf63;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-logo img {
+        height: 12vh;
+    }
+
+
+    .site-name {
+        font-size: 18px;
+    }
+
+    .navbar-contact {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        padding: 17vw;
+        
+
+    }
+
+    .header h1 {
+        margin-top: 28vw;
+        font-size: 40px;
+        font-weight: 700;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header p {
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        padding-bottom: 15px;
+        font-size: 20px;
+
+    }
+
+    .headerImage img {
+        width: 80vw;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container2 {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .container5 {
+        padding: 20px;
+        margin-top: -20px;
+    }
+
+    .container4 {
+        gap: 10px;
+    }
+
+    .headerContent h1 {
+        font-size: 28px;
+        line-height: 30px;
+
+    }
+
+    .headerContent p {
+        font-size: 20px;
+        line-height: 18px;
+        gap: 20px;
+        font-weight: 400;
+        word-spacing: 0.15rem;
+    }
+
+    .svg {
+        gap: 23px;
+    }
+
+    button {
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+}
+
+/* @media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-logo img {
+        height: 10vh;
+    }
+
+    .site-name {
+        font-size: 18px;
+    }
+
+    .navbar-contact {
+        font-size: px;
+    }
+
+    .container1 {
+        padding: 15px;
+    } */
+
+/* .headerImage img {
+        width: 90vw;
+    }
+
+    .container2 {
+        padding: 15px 15px;
+        
+    }
+
+    .container5 {
+        padding: 20px;
+    }
+
+    .headerContent h1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .headerContent p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+    button {
+        padding: 30px 30px ;
+        font-size: 22px;
+    }
+    .svg{
+        gap: 10px;
+    }
+}    */

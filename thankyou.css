@@ -1,0 +1,72 @@
+/* Thank you page */
+.thankyou{
+    text-align: center;
+    justify-content: center;
+    padding: 10vw;
+    line-height: 26px;
+    font-size: 18px;
+    
+}
+
+.thankyou img{
+    width: 15vw;
+}
+
+.thankyou span{
+    
+    color: #00bf63;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+} 
+.thankyou span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.1);
+    text-shadow: 1px 0 #00bf63;
+    
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .thankyou {
+        padding: 10vw ;
+        font-size: 17px;
+        line-height: 23px;
+        bottom: 20vw;
+        flex-direction: column;
+        padding: 53vw 30px;
+        
+    }
+    .thankyou img {
+        width: 50vw;
+        
+    }
+    
+    
+    .thankyou span {
+        padding: 5px 5px;
+    }
+    .svg {
+        margin-top: 20px;
+    }
+    footer {
+        margin-top: 30px;
+    }
+
+    
+}
+
+/* @media (max-width: 480px) {
+    .thankyou {
+        padding: 20vw;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .thankyou img {
+        width: 20vw;
+    }
+    .thankyou span {
+        padding: 12px 12px;
+    }
+} */
